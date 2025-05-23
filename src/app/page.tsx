@@ -10,7 +10,7 @@ export default function Home() {
   useEffect(() => {
     const interval = setInterval(() => {
       setDate(new Date());
-    }, 4000);
+    }, 1000 * 10);
 
     return () => clearInterval(interval);
   }, []);
