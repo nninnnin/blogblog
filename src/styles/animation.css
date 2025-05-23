@@ -1,0 +1,26 @@
+@keyframes colorize {
+  0% {
+    background-color: rgba(240, 248, 255, 0.2);
+  }
+
+  10% {
+    background-color: rgba(127, 255, 212, 0.2);
+  }
+
+  60% {
+    background-color: rgba(235, 195, 195, 0.2);
+  }
+
+  100% {
+    background-color: rgba(240, 248, 255, 0.2);
+  }
+}
+
+.animate-colorize {
+  animation: colorize 20s infinite;
+}
+
+.animate-colorize-text {
+  text-shadow: 0 0 50px rgb(6, 95, 95);
+  color: rgb(255, 255, 255);
+}
