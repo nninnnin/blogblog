@@ -11,7 +11,8 @@ export default function Home() {
     <div
       className={clsx(
         "h-full flex flex-col justify-center items-center",
-        "bg-[#787878]"
+        "animate-colorize",
+        "text-[#eeeeee]"
       )}
     >
       <Time />
