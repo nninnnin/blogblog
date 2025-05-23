@@ -7,16 +7,16 @@ import { useEffect, useMemo, useState } from "react";
 export default function Home() {
   const [date, setDate] = useState(new Date());
 
-  useEffect(() => {
-    const interval = setInterval(() => {
-      setDate(new Date());
-    }, 1000 * 10);
+  // useEffect(() => {
+  //   const interval = setInterval(() => {
+  //     setDate(new Date());
+  //   }, 1000 * 10);
 
-    return () => clearInterval(interval);
-  }, []);
+  //   return () => clearInterval(interval);
+  // }, []);
 
   const aligns = useMemo(() => {
-    return fill(Array(50), null).map(() =>
+    return fill(Array(200), null).map(() =>
       sample(["text-right", "text-left", "text-center"])
     );
   }, []);
@@ -31,8 +31,8 @@ export default function Home() {
       <div
         className={clsx(
           "text-[#aaaaaa] text-[1em] font-black",
-          "w-full h-[calc(100dvh-59px)] overflow-hidden",
-          "pointer-events-none select-none"
+          "w-full h-[calc(100dvh-59px)] overflow-y-scroll overflow-x-hidden",
+          "select-none"
         )}
       >
         {aligns.map((align, index) => {
@@ -60,6 +60,22 @@ const Time = ({ className, date }: { className: string; date: Date }) => (
         "100px",
       ]),
       fontSize: sample(["8px", "12px", "18px"]),
+      lineHeight: sample([
+        "-2em",
+        "-1em",
+        "0.1em",
+        "0.2em",
+        "0.3em",
+        "0.4em",
+        "0.5em",
+        "0.6em",
+        "0.7em",
+        "0.8em",
+        "0.9em",
+        "1em",
+        "1.2em",
+        "2em",
+      ]),
     }}
     suppressHydrationWarning
   >

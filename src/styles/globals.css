@@ -2,6 +2,10 @@
 
 @import "./animation.css";
 
+* {
+  overscroll-behavior: none;
+}
+
 html,
 body {
   margin: 0;
