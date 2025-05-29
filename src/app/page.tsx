@@ -13,6 +13,13 @@ export default function Home() {
     );
   }, []);
 
+  const timeColorset = sample([
+    ["red", "#2d0a3d", "#ff0051"],
+    ["green", "blue", "navy"],
+    ["inherit", "inherit", "#383838"],
+    ["#ff3df5", "yellow", "#00ff33"],
+  ]);
+
   return (
     <div
       className={clsx(
@@ -23,19 +30,34 @@ export default function Home() {
       <div
         className={clsx(
           "text-[#aaaaaa] text-[1em] font-black",
-          "w-full h-[calc(100dvh-59px)] overflow-y-scroll overflow-x-hidden",
+          "w-full h-[calc(100dvh-59px)] overflow-hidden",
           "select-none"
         )}
       >
         {aligns.map((align, index) => {
-          return <Time key={`time-${index}`} className={align} date={date} />;
+          return (
+            <Time
+              key={`time-${index}`}
+              className={align}
+              date={date}
+              colorset={timeColorset}
+            />
+          );
         })}
       </div>
     </div>
   );
 }
 
-const Time = ({ className, date }: { className: string; date: Date }) => (
+const Time = ({
+  className,
+  date,
+  colorset,
+}: {
+  className: string;
+  date: Date;
+  colorset: Array<string>;
+}) => (
   <div
     className={clsx("scailing", className)}
     style={{
@@ -92,20 +114,7 @@ const Time = ({ className, date }: { className: string; date: Date }) => (
         "1vw",
       ]),
       opacity: sample([0.1, 0.2, 0.5, 0.6, 0.9, 1]),
-      color: sample([
-        "red",
-        "#2d0a3d",
-        "#ff0051",
-        "green",
-        "blue",
-        "navy",
-        "#ff3df5",
-        "yellow",
-        "#00ff33",
-        "inherit",
-        "inherit",
-        "#383838",
-      ]),
+      color: sample([...colorset]),
     }}
     suppressHydrationWarning
   >
