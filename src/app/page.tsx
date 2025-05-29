@@ -118,6 +118,14 @@ const Time = ({
     }}
     suppressHydrationWarning
   >
-    {date.toISOString()}
+    {new Intl.DateTimeFormat(
+      sample(["ko-KR", "ja-JP", "en-GB", "hy-AM", "it-IT"]),
+      {
+        year: "numeric",
+        month: "long",
+        day: "numeric",
+        weekday: "long",
+      }
+    ).format(new Date())}
   </div>
 );
