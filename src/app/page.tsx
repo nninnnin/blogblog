@@ -91,6 +91,21 @@ const Time = ({ className, date }: { className: string; date: Date }) => (
         "1em",
         "1vw",
       ]),
+      opacity: sample([0.1, 0.2, 0.5, 0.6, 0.9, 1]),
+      color: sample([
+        "red",
+        "#2d0a3d",
+        "#ff0051",
+        "green",
+        "blue",
+        "navy",
+        "#ff3df5",
+        "yellow",
+        "#00ff33",
+        "inherit",
+        "inherit",
+        "#383838",
+      ]),
     }}
     suppressHydrationWarning
   >
