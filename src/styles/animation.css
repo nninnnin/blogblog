@@ -47,6 +47,10 @@
   animation: scale-in 10s ease forwards;
 }
 
+.scailing {
+  transform: scale(7);
+}
+
 @media (max-width: 480px) {
   .scailing {
     transform: scale(5);
