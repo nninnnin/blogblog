@@ -2,7 +2,7 @@ import clsx from "clsx";
 
 import Facade from "@/app/components/facade";
 
-export const revalidate = 3; // seconds
+export const revalidate = 1; // seconds
 
 export default function Home() {
   return (
