@@ -48,9 +48,9 @@
 }
 
 .scailing {
-  transform: scale(60);
+  transform: scale(20);
 
-  line-height: 400%;
+  line-height: 1000%;
 }
 
 @media (max-width: 480px) {
