@@ -1,8 +1,8 @@
-"use client";
-
 import clsx from "clsx";
 
 import Facade from "@/app/components/facade";
+
+export const revalidate = 3; // seconds
 
 export default function Home() {
   return (

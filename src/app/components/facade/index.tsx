@@ -1,7 +1,6 @@
-import dynamic from "next/dynamic";
 import React from "react";
 
-const Facade01 = dynamic(() => import("@/app/components/facade/Facade01"));
+import Facade01 from "@/app/components/facade/Facade01";
 
 const Facade = () => {
   return (
