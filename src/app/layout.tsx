@@ -40,7 +40,7 @@ export default function RootLayout({
 
           <footer
             className={clsx(
-              "text-right text-white bg-black",
+              "text-right text-white bg-[deepskyblue]",
               "p-[4px] pr-[16px]",
               "text-[12px]"
             )}

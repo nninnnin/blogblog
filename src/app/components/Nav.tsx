@@ -5,13 +5,20 @@ const Nav = () => {
   return (
     <div
       className={clsx(
-        "border-b-[1px]",
-        "p-[4px]",
         "flex justify-between items-center",
-        "px-[1em] pl-[0.5em]"
+        "pr-[1em]",
+        "select-none",
+        "text-[deepskyblue]"
       )}
     >
-      <div className="text-[12px]">
+      <div
+        className={clsx(
+          "text-[12px] tracking-tight",
+          "p-[8px] pl-[14px] pr-[100px]",
+          "w-full",
+          "font-bold"
+        )}
+      >
         <Link href="/">Justin Donggyu Lee</Link>
       </div>
 
