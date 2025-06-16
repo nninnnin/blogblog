@@ -40,9 +40,11 @@ export default function RootLayout({
 
           <footer
             className={clsx(
-              "text-right text-white bg-[deepskyblue]",
+              "text-right text-[gainsboro]",
               "p-[4px] pr-[16px]",
-              "text-[12px]"
+              "text-[12px]",
+              "cursor-pointer",
+              "select-none"
             )}
           >
             All rights reserved &copy; 2025 이동규

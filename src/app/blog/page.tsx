@@ -3,19 +3,21 @@ import React from "react";
 
 const BlogPage = () => {
   return (
-    <div className={clsx("p-[1em]")}>
+    <div
+      className={clsx(
+        "p-[1em]",
+        "transition-all duration-100",
+        "text-[gainsboro] hover:text-green-300",
+        "border-[gainsboro] hover:border-text-green-300"
+      )}
+    >
       <ul className="flex flex-col gap-[0.5em]">
-        <li
-          className={clsx(
-            "border-b-[3px] border-dotted border-[gainsboro] pb-[0.5em]"
-          )}
-        >
+        <li className={clsx("border-b-[3px] border-dotted pb-[0.5em]")}>
           <a
             className={clsx(
-              "transition-all duration-200",
-              "font-semibold hover:font-black",
-              "tracking-tight hover:tracking-normal",
-              "hover:text-[gainsboro]"
+              "transition-all duration-100",
+              "font-semibold",
+              "tracking-widest"
             )}
             href="blog/sjf2025"
           >
