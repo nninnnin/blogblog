@@ -5,6 +5,7 @@ import { Geist, Geist_Mono } from "next/font/google";
 import Nav from "@/app/components/Nav";
 
 import "../styles/globals.css";
+import Footer from "@/app/components/Footer";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -38,17 +39,7 @@ export default function RootLayout({
 
           <div className="flex-1">{children}</div>
 
-          <footer
-            className={clsx(
-              "text-right text-[gainsboro]",
-              "p-[4px] pr-[16px]",
-              "text-[12px]",
-              "cursor-pointer",
-              "select-none"
-            )}
-          >
-            All rights reserved &copy; 2025 이동규
-          </footer>
+          <Footer />
         </div>
       </body>
     </html>

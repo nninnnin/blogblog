@@ -12,8 +12,13 @@ const Nav = () => {
         "pr-[1em]",
         "select-none",
         "transition-all duration-200",
-        "text-[gainsboro] cursor-pointer"
+        "text-[gainsboro] cursor-pointer",
+        "border-b-[1.5px]"
       )}
+      style={{
+        // borderColor: "rgba(0, 255, 255, 0.5)",
+        borderColor: "#efefef",
+      }}
     >
       <Link href="/">
         <div

@@ -8,22 +8,23 @@ const BlogPage = () => {
         "p-[1em]",
         "transition-all duration-100",
         "text-[gainsboro] hover:text-green-300",
-        "border-[gainsboro] hover:border-text-green-300"
+        "border-[gainsboro] hover:border-text-green-300",
+        "text-sm text-right"
       )}
     >
       <ul className="flex flex-col gap-[0.5em]">
-        <li className={clsx("border-b-[3px] border-dotted pb-[0.5em]")}>
-          <a
-            className={clsx(
-              "transition-all duration-100",
-              "font-semibold",
-              "tracking-widest"
-            )}
-            href="blog/sjf2025"
-          >
+        <a
+          className={clsx(
+            "transition-all duration-100",
+            "font-semibold",
+            "tracking-wide"
+          )}
+          href="blog/sjf2025"
+        >
+          <li className={clsx("border-b-[3px] border-dotted pb-[0.5em]")}>
             2025 서울 재즈 페스티벌
-          </a>
-        </li>
+          </li>
+        </a>
 
         {/* <li className="border-b-[3px] border-dotted border-[gainsboro] pb-[0.5em]">
           <a href="blog/sjf2025">내 생애 첫 창녀와의 섹스</a>

@@ -9,7 +9,7 @@ const PostDetails = () => {
     >
       <div>
         <div className="flex flex-row-reverse">
-          <div className="flex-1 h-[calc(100dvh-60px)] overflow-y-scroll">
+          <div className="flex-1 overflow-y-scroll">
             <p>
               <img src="/sjf/01.JPG" />
             </p>
