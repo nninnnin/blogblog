@@ -23,7 +23,7 @@ const Facade01 = () => {
       <div
         className={clsx(
           "text-[#aaaaaa] text-[1em] font-black",
-          "w-full h-[calc(100dvh-59px)] overflow-hidden",
+          "w-full h-[calc(100dvh-60px)] overflow-hidden",
           "select-none"
         )}
       >
